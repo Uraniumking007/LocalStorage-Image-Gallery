@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script type="module" src="./login.js"></script>
+  </head>
+  <body
+    class="bg-neutral flex justify-center items-center h-screen"
+    data-theme="night"
+  >
+    <div
+      class="w-[30%] flex justify-center items-center flex-col bg-base-300 rounded-lg"
+    >
+      <legend class="mt-8 text-lg font-bold">Login</legend>
+      <form action="" method="post" class="w-full">
+        <div
+          class="flex justify-center items-center flex-col gap-6 py-8 w-full"
+          id="form"
+        >
+          <div id="main"></div>
+          <div class="relative z-0 w-[75%]">
+            <input
+              type="text"
+              name="username"
+              id="username"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+            />
+            <label
+              for="username"
+              class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Username</label
+            >
+          </div>
+          <div class="relative z-0 w-[75%]">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+            />
+            <label
+              for="password"
+              class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Password</label
+            >
+          </div>
+          <div class="flex w-full justify-evenly mt-4">
+            <button
+              class="btn bg-secondary text-secondary-content hover:bg-secondary-focus"
+              type="submit"
+              id="login"
+            >
+              Login
+            </button>
+            <button
+              type="button"
+              id="register"
+              class="btn bg-secondary text-secondary-content hover:bg-secondary-focus"
+            >
+              Register
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

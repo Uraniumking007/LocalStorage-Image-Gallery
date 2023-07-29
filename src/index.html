@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+
+    <title>Base Pr</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./script.js"></script>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  <body
+    class="bg-neutral h-screen flex justify-center flex-col items-center"
+    data-theme="night"
+  >
+    <div
+      class="bg-base-300 p-8 rounded-xl flex justify-center items-center flex-col"
+    >
+      <div class="m-8">Registration</div>
+      <form action="" method="get">
+        <div class="flex justify-center flex-col gap-4" id="form">
+          <div class="relative z-0">
+            <input
+              type="text"
+              name="username"
+              id="username"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+            />
+            <label
+              for="username"
+              class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Username</label
+            >
+          </div>
+          <div class="relative z-0">
+            <input
+              type="email"
+              name="emailAddress"
+              id="emailAddress"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+            />
+            <label
+              for="emailAddress"
+              class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Email Address</label
+            >
+          </div>
+          <div class="relative z-0">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="block py-2.5 px-0 w-full password text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+            />
+            <label
+              for="password"
+              class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Password</label
+            >
+          </div>
+          <div class="relative z-0">
+            <input
+              type="number"
+              pattern="numeric"
+              name="ContactNumber"
+              id="contactNumber"
+              class="block py-2.5 px-0 w-full password text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+            />
+            <label
+              for="ContactNumber"
+              class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Contact Number</label
+            >
+          </div>
+          <div
+            class="flex items-center pl-4 border border-gray-200 rounded dark:border-gray-700"
+          >
+            <input
+              type="radio"
+              name="gender"
+              id="male"
+              value="male"
+              class="w-4 h-4 gender text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 peer/male dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            />
+            <label
+              for="male"
+              class="w-full py-4 ml-2 text-sm font-medium text-gray-900 peer-checked/male:text-blue-500 dark:text-gray-300"
+              >Male</label
+            >
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+              id="female"
+              class="gender w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 peer/female dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            />
+            <label
+              for="female"
+              class="w-full py-4 ml-2 text-sm font-medium text-gray-900 peer-checked/female:text-blue-500 dark:text-gray-300"
+              >Female</label
+            >
+          </div>
+          <div>
+            <label
+              class="block image mb-2 text-sm font-medium text-white"
+              for="image"
+              >Upload file</label
+            >
+            <input
+              class="block image w-full text-sm border rounded-lg cursor-pointer bg-gray-700 text-gray-400 focus:outline-none border-gray-600 placeholder-gray-400"
+              aria-describedby="file_input_help"
+              id="image"
+              name="image"
+              accept="image/png, image/jpeg"
+              type="file"
+            />
+            <p
+              class="mt-1 text-sm text-gray-500 dark:text-gray-300"
+              id="file_input_help"
+            >
+              PNG or JPG.
+            </p>
+          </div>
+          <button type="submit" class="p-4 btn" id="submit">Register</button>
+          <button type="button" class="p-4 btn" id="login">
+            Already a user? Login
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

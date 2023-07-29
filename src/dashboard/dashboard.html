@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <script type="module" src="./dashboard.js"></script>
+    <title>Document</title>
+  </head>
+  <body
+    class="bg-neutral h-screen w-screen flex justify-center"
+    data-theme="night"
+  >
+    <div class="container h-full overflow-x-hidden">
+      <nav class="navbar bg-base-300 drop-shadow-lg justify-end rounded-b-xl">
+        <li class="btn btn-base-300 mr-4 my-2 px-4 py-2 text-sm" id="logout">
+          Logout
+        </li>
+      </nav>
+      <!-- <dialog id="confirm">
+        <form>
+          <div>Are you Sure you want to Delete this Image?</div>
+          <button id="confirmBtn" value="true">Confirm</button>
+          <button value="cancel" formmethod="dialog" id="cancelBtn">
+            Cancel
+          </button>
+        </form>
+      </dialog> -->
+      <lottie-player
+        src="https://assets6.lottiefiles.com/packages/lf20_oga1x3jk.json"
+        background="transparent"
+        id="empty-animation"
+        speed="1.5"
+        class="flex w-full h-full"
+        loop
+        autoplay
+      ></lottie-player>
+      <div
+        class="container overflow-visible h-full flex flex-wrap justify-start mt-8 ml-8 gap-4"
+        id="image-container"
+      ></div>
+      <label
+        for="file"
+        class="fixed bottom-10 right-10 btn bg-secondary btn-circle hover:bg-secondary-focus"
+      >
+        <img src="/plus.svg" alt="add" />
+      </label>
+      <input type="file" id="file" class="hidden" multiple="true" />
+      <input type="file" id="edited" class="hidden" />
+    </div>
+  </body>
+</html>
